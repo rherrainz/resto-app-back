@@ -1,7 +1,8 @@
-import express from 'express';
+import express, { application } from 'express';
 import {PORT} from './config/config.js';
 import {getConnection} from './db/connection.js';
 import { commentsRouter } from './routes/commentsRouter.js';
+import { menuRouter } from './routes/menuRouter.js';
 import cors from 'cors';
 
 const app = express();
@@ -24,6 +25,7 @@ getConnection()
 
 
 app.use('/comments', commentsRouter);
+app.use('/menu', menuRouter);
 
 app.get('/', (req, res) => res.send('Hello World!'))
 

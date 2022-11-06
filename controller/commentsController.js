@@ -15,8 +15,8 @@ export const getComments = async (req,res)=>{
 
 export const getComment = async (req,res)=>{
     const id = req.params.id;
-    const user = await comment.getComment(id);
-    res.json(user);
+    const comment = await comment.getComment(id);
+    res.json(comment);
 }
 
 export const deleteComment = async (req,res) => {
