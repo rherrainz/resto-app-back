@@ -5,7 +5,7 @@ import {DB,DBATLAS} from '../config/config.js';
 
 export const getConnection = async () => {
   try {
-    await mongoose.connect(DB, {
+    await mongoose.connect(DBATLAS, {
          useNewUrlParser: true, 
          useUnifiedTopology: true, 
         });
