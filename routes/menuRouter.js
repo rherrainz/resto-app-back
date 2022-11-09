@@ -1,5 +1,5 @@
 import Router from 'express';
-import { saveMenuItem,getMenuItem,deleteMenuItem, updateMenuItem,getMenu } from '../controller/MenuController.js';
+import { saveMenuItem,getMenuItem,deleteMenuItem, updateMenuItem,getMenu } from '../controller/menuController.js';
 
 export const menuRouter = Router();
 
