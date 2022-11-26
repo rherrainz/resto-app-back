@@ -1,4 +1,4 @@
-import express, { application } from 'express';
+import express from 'express';
 import {PORT} from './config/config.js';
 import {getConnection} from './db/connection.js';
 import { commentsRouter } from './routes/commentsRouter.js';
